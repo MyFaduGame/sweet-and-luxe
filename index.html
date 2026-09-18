@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Premium Handcrafted Chocolates & Custom Gifts | Sweet Moments Chocolate Boutique</title>
+    <meta name="title" content="Premium Handcrafted Chocolates & Custom Gifts | Sweet Moments Chocolate Boutique">
+    <meta name="description" content="Discover handcrafted chocolates, personalised gifts, wedding favours and premium hampers made for life's sweetest moments. Custom gifting for every occasion across India.">
+    <meta name="keywords" content="handcrafted chocolates, custom chocolate gifts, wedding favors, corporate gifting, personalized chocolates, premium hampers, chocolate boutique, Indian chocolate gifts">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sweetmoments.com/">
+    <meta property="og:title" content="Premium Handcrafted Chocolates & Custom Gifts | Sweet Moments Chocolate Boutique">
+    <meta property="og:description" content="Discover handcrafted chocolates, personalised gifts, wedding favours and premium hampers made for life's sweetest moments.">
+    <meta property="og:image" content="https://sweetmoments.com/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sweetmoments.com/">
+    <meta property="twitter:title" content="Premium Handcrafted Chocolates & Custom Gifts">
+    <meta property="twitter:description" content="Discover handcrafted chocolates, personalised gifts, wedding favours and premium hampers made for life's sweetest moments.">
+    <meta property="twitter:image" content="https://sweetmoments.com/assets/images/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sweetmoments.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sweet Moments Chocolate Boutique",
+        "description": "Premium handcrafted chocolates and custom gifts for every occasion",
+        "url": "https://sweetmoments.com",
+        "image": "https://sweetmoments.com/assets/images/logo.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressCountry": "IN"
+        },
+        "priceRange": "₹₹",
+        "servesCuisine": "Chocolates & Confectionery"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar" class="announcement-bar">
+        <p class="announcement-text"></p>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <span class="brand-name">Sweet Moments</span>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#occasions" class="nav-link">Occasions</a></li>
+                <li><a href="#corporate" class="nav-link">Corporate</a></li>
+                <li><a href="#story" class="nav-link">Our Story</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary btn-nav-whatsapp" onclick="openWhatsApp(businessConfig.messages.general)" aria-label="Order on WhatsApp">
+                    <i data-lucide="message-circle"></i>
+                    <span>WhatsApp Us</span>
+                </button>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                    <i data-lucide="x" id="close-icon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-eyebrow">HANDCRAFTED CHOCOLATE GIFTS</p>
+                <h1 class="hero-headline">Made to Melt Hearts.</h1>
+                <p class="hero-description">Handcrafted chocolates and beautifully curated gifts, made for the moments that deserve something special.</p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" onclick="openWhatsApp(businessConfig.messages.general)">
+                        <i data-lucide="message-circle"></i>
+                        Order on WhatsApp
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="scrollToSection('products')">
+                        Explore Collection
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80" alt="Premium handcrafted chocolate gift boxes" loading="eager">
+                    <div class="hero-decoration-1"></div>
+                    <div class="hero-decoration-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-grid" id="trust-grid"></div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="collections section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Something Sweet for Every Occasion</h2>
+                <p class="section-subtitle">Thoughtfully crafted gifts for life's celebrations, big and small.</p>
+            </div>
+
+            <div class="collections-grid" id="collections-grid"></div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Most Loved Creations</h2>
+                <p class="section-subtitle">Each piece handcrafted with care and premium ingredients</p>
+            </div>
+
+            <div class="products-grid" id="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section id="story" class="story section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4cff2b99?w=600&q=80" alt="Artisan crafting premium chocolates" loading="lazy">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">More Than Chocolate.<br>It's a Memory.</h2>
+
+                    <div class="story-features">
+                        <div class="story-feature">
+                            <i data-lucide="heart-handshake"></i>
+                            <h3>Crafted by Hand</h3>
+                            <p>Every piece is prepared with care and attention to detail.</p>
+                        </div>
+
+                        <div class="story-feature">
+                            <i data-lucide="sparkles"></i>
+                            <h3>Made Personal</h3>
+                            <p>Custom wrappers, messages, packaging and themes.</p>
+                        </div>
+
+                        <div class="story-feature">
+                            <i data-lucide="gift"></i>
+                            <h3>Beautifully Presented</h3>
+                            <p>Because the experience begins before the first bite.</p>
+                        </div>
+
+                        <div class="story-feature">
+                            <i data-lucide="calendar-heart"></i>
+                            <h3>Made for Your Moments</h3>
+                            <p>From intimate celebrations to large corporate orders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Gifting -->
+    <section id="custom-gifting" class="custom-gifting section section-alt">
+        <div class="container">
+            <div class="custom-gifting-content">
+                <h2 class="section-title">Your Occasion. Your Story.<br>Your Chocolate.</h2>
+                <p class="custom-gifting-description">Create a truly unique gift that tells your story. Customise everything from flavours to packaging, names to themes.</p>
+
+                <div class="customization-options">
+                    <div class="custom-option"><i data-lucide="palette"></i> Flavours</div>
+                    <div class="custom-option"><i data-lucide="box"></i> Packaging</div>
+                    <div class="custom-option"><i data-lucide="tag"></i> Wrappers</div>
+                    <div class="custom-option"><i data-lucide="type"></i> Names & Messages</div>
+                    <div class="custom-option"><i data-lucide="image"></i> Logos & Branding</div>
+                    <div class="custom-option"><i data-lucide="palette"></i> Colours & Themes</div>
+                    <div class="custom-option"><i data-lucide="package"></i> Quantity</div>
+                </div>
+
+                <button class="btn btn-primary btn-large" onclick="openWhatsApp(businessConfig.messages.customGift)">
+                    <i data-lucide="sparkles"></i>
+                    Create My Custom Gift
+                </button>
+            </div>
+
+            <div class="custom-gifting-gallery">
+                <div class="custom-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4cff2b99?w=400&q=80" alt="Custom chocolate packaging" loading="lazy">
+                </div>
+                <div class="custom-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" alt="Personalized chocolate wrapper" loading="lazy">
+                </div>
+                <div class="custom-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&q=80" alt="Themed gift box" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Occasions -->
+    <section id="occasions" class="occasions section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Made for Every Celebration</h2>
+                <p class="section-subtitle">Life's sweetest moments deserve something equally special</p>
+            </div>
+
+            <div class="occasions-grid" id="occasions-grid"></div>
+        </div>
+    </section>
+
+    <!-- Corporate Gifting -->
+    <section id="corporate" class="corporate section section-dark">
+        <div class="container">
+            <div class="corporate-content">
+                <div class="corporate-text">
+                    <h2 class="section-title">Make Your Brand Part of the Celebration</h2>
+                    <p class="corporate-description">Thoughtful gifts that strengthen relationships with clients, teams and partners.</p>
+
+                    <div class="corporate-features">
+                        <div class="corporate-feature">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <h3>Custom Branding</h3>
+                                <p>Your logo, your colours, your message</p>
+                            </div>
+                        </div>
+                        <div class="corporate-feature">
+                            <i data-lucide="package-open"></i>
+                            <div>
+                                <h3>Bulk Orders</h3>
+                                <p>Perfect for employee gifting and events</p>
+                            </div>
+                        </div>
+                        <div class="corporate-feature">
+                            <i data-lucide="users"></i>
+                            <div>
+                                <h3>Client Gifting</h3>
+                                <p>Leave a lasting impression that matters</p>
+                            </div>
+                        </div>
+                        <div class="corporate-feature">
+                            <i data-lucide="calendar"></i>
+                            <div>
+                                <h3>Event Gifting</h3>
+                                <p>Conferences, launches and celebrations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-large" onclick="openWhatsApp(businessConfig.messages.corporate)">
+                        <i data-lucide="briefcase"></i>
+                        Discuss Corporate Gifting
+                    </button>
+                </div>
+
+                <div class="corporate-image">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4cff2b99?w=600&q=80" alt="Corporate branded chocolate gifts" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple, personal and crafted just for you</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i data-lucide="search"></i></div>
+                    <h3 class="step-title">Choose Your Gift</h3>
+                    <p class="step-description">Browse chocolates, hampers and gifting collections.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i data-lucide="message-square"></i></div>
+                    <h3 class="step-title">Tell Us What You Need</h3>
+                    <p class="step-description">Share your occasion, quantity, budget and customization requirements.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 class="step-title">We Create It</h3>
+                    <p class="step-description">Our team prepares your chocolates and packaging with care.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i data-lucide="truck"></i></div>
+                    <h3 class="step-title">Delivered With Love</h3>
+                    <p class="step-description">Your order reaches you or your recipient across India.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-primary btn-large" onclick="openWhatsApp(businessConfig.messages.general)">
+                    <i data-lucide="play-circle"></i>
+                    Start an Enquiry
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Moments that made memories</p>
+            </div>
+
+            <div class="testimonials-carousel" id="testimonials-carousel"></div>
+
+            <div class="testimonials-controls">
+                <button class="carousel-btn" id="prev-testimonial" aria-label="Previous testimonial">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <button class="carousel-btn" id="next-testimonial" aria-label="Next testimonial">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Crafted With Love</h2>
+                <p class="section-subtitle">Every detail matters</p>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq section section-alt">
+        <div class="container faq-container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know</p>
+            </div>
+
+            <div class="faq-list" id="faq-list"></div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contact" class="final-cta section section-dark">
+        <div class="container">
+            <div class="final-cta-content">
+                <h2 class="final-cta-title">Have a Moment Worth Celebrating?</h2>
+                <p class="final-cta-description">Tell us what you're imagining. We'll help turn it into something deliciously memorable.</p>
+
+                <div class="final-cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="openWhatsApp(businessConfig.messages.general)">
+                        <i data-lucide="message-circle"></i>
+                        Order on WhatsApp
+                    </button>
+                    <a href="tel:+919876543210" class="btn btn-secondary btn-large">
+                        <i data-lucide="phone"></i>
+                        Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-brand">Sweet Moments</h3>
+                    <p class="footer-tagline">Handcrafted chocolates for life's sweetest moments</p>
+                    <div class="footer-social" id="footer-social"></div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#occasions">Occasions</a></li>
+                        <li><a href="#corporate">Corporate Gifting</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </li>
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <a href="mailto:hello@sweetmoments.com">hello@sweetmoments.com</a>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>Mumbai, India</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Get in Touch</h4>
+                    <p class="footer-cta-text">Have a question? We're here to help!</p>
+                    <button class="btn btn-primary" onclick="openWhatsApp(businessConfig.messages.general)">
+                        <i data-lucide="message-circle"></i>
+                        Chat on WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Moments Chocolate Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <button class="whatsapp-float" onclick="openWhatsApp(businessConfig.messages.general)" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle"></i>
+        <span class="whatsapp-float-text">Chat with us</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
