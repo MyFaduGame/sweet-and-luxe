@@ -6,12 +6,12 @@
 // BUSINESS CONFIGURATION
 // ===================================
 const businessConfig = {
-    name: "Sweet Moments",
-    tagline: "Handcrafted chocolates for life's sweetest moments",
-    whatsapp: "919876543210", // UPDATE THIS - Format: CountryCode + Number (no spaces, +, or -)
-    phone: "+91 98765 43210",
-    email: "hello@sweetmoments.com",
-    city: "Mumbai",
+    name: "Hitesh Lalwani Chocolates",
+    tagline: "Premium handcrafted chocolates and bespoke gifting",
+    whatsapp: "917383345192", // Hitesh Lalwani's WhatsApp
+    phone: "+91 73833 45192",
+    email: "contact@hiteshlalwani.com",
+    city: "India",
     country: "India",
     instagram: "", // Leave empty if not available - "https://instagram.com/yourbusiness"
     facebook: "", // Leave empty if not available
@@ -20,7 +20,7 @@ const businessConfig = {
     messages: {
         general: "Hi! I'd like to know more about your handcrafted chocolates and gifting options.",
         customGift: "Hi! I'd like to create a customised chocolate gift. Could you please help me with the available options?",
-        corporate: "Hi! I'd like to discuss a corporate gifting requirement. Please share your options for bulk and custom branded chocolate gifts.",
+        corporate: "Hi Hitesh! I'd like to discuss a corporate gifting requirement. Please share your options for bulk and custom branded chocolate gifts.",
     }
 };
 
@@ -68,36 +68,36 @@ const collections = [
         id: "birthday",
         title: "Birthday Gifting",
         description: "Make their day a little sweeter.",
-        image: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=600&q=80",
+        image: "images temp/products (1).jpeg",
         message: "Hi! I'm looking for birthday chocolate gifts. Could you please share your birthday collection and customization options?"
     },
     {
         id: "wedding",
         title: "Wedding & Anniversary",
         description: "Thoughtful gifts for beautiful beginnings.",
-        image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80",
+        image: "images temp/products (5).jpeg",
         message: "Hi! I'm interested in wedding/anniversary chocolate gifts. Could you share details about your wedding collection?"
     },
     {
         id: "baby",
         title: "Baby Celebrations",
         description: "Celebrate tiny moments with something special.",
-        image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80",
+        image: "images temp/products (4).jpeg",
         message: "Hi! I'd like to know about chocolate gifts for baby showers and celebrations."
     },
     {
         id: "festive",
         title: "Festive Gifting",
         description: "Share sweetness this festive season.",
-        image: "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=600&q=80",
+        image: "images temp/products (3).jpeg",
         message: "Hi! I'm looking for festive chocolate gifts. What options do you have for festivals?"
     },
     {
         id: "corporate",
         title: "Corporate Gifting",
         description: "Thoughtful gifts for clients, teams and partners.",
-        image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80",
-        message: "Hi! I'd like to discuss corporate gifting options for bulk orders. Please share details."
+        image: "images temp/products (6).jpeg",
+        message: "Hi Hitesh! I'd like to discuss corporate gifting options for bulk orders. Please share details."
     }
 ];
 
@@ -110,7 +110,7 @@ const products = [
         name: "Classic Chocolate Box",
         description: "A curated assortment of handcrafted chocolates in elegant packaging.",
         price: "Starting from ₹799",
-        image: "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
+        image: "images temp/products (1).jpeg",
         category: "bestseller"
     },
     {
@@ -118,7 +118,7 @@ const products = [
         name: "Assorted Truffle Box",
         description: "Rich, melt-in-your-mouth truffles in multiple flavours.",
         price: "Starting from ₹999",
-        image: "https://images.unsplash.com/photo-1606312619070-d48b4cff2b99?w=500&q=80",
+        image: "images temp/products (2).jpeg",
         category: "bestseller"
     },
     {
@@ -126,7 +126,7 @@ const products = [
         name: "Luxury Celebration Hamper",
         description: "A premium gifting experience with chocolates, treats and beautiful packaging.",
         price: "Starting from ₹1,499",
-        image: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=500&q=80",
+        image: "images temp/products (3).jpeg",
         category: "premium"
     },
     {
@@ -134,7 +134,7 @@ const products = [
         name: "Personalised Chocolate Box",
         description: "Custom wrappers with names, messages or photos.",
         price: "Starting from ₹899",
-        image: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
+        image: "images temp/products (4).jpeg",
         category: "custom"
     },
     {
@@ -142,7 +142,7 @@ const products = [
         name: "Wedding Favour Box",
         description: "Beautifully packaged wedding favours for your guests.",
         price: "Starting from ₹99 per piece",
-        image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80",
+        image: "images temp/products (5).jpeg",
         category: "wedding"
     },
     {
@@ -150,7 +150,7 @@ const products = [
         name: "Corporate Gift Hamper",
         description: "Premium hampers with custom branding for corporate gifting.",
         price: "Starting from ₹1,299",
-        image: "https://images.unsplash.com/photo-1606312619070-d48b4cff2b99?w=500&q=80",
+        image: "images temp/products (6).jpeg",
         category: "corporate"
     },
     {
@@ -158,7 +158,7 @@ const products = [
         name: "Chocolate Bouquet",
         description: "A stunning bouquet made entirely of handcrafted chocolates.",
         price: "Starting from ₹1,199",
-        image: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=500&q=80",
+        image: "images temp/products (7).jpeg",
         category: "special"
     },
     {
@@ -166,7 +166,7 @@ const products = [
         name: "Premium Festive Hamper",
         description: "Celebrate festivals with our specially curated festive collections.",
         price: "Starting from ₹1,399",
-        image: "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=500&q=80",
+        image: "images temp/products (1).jpeg",
         category: "festive"
     }
 ];
@@ -225,35 +225,35 @@ const testimonials = [
 // ===================================
 const galleryImages = [
     {
-        url: "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
+        url: "images temp/products (1).jpeg",
         alt: "Handcrafted chocolate boxes"
     },
     {
-        url: "https://images.unsplash.com/photo-1606312619070-d48b4cff2b99?w=500&q=80",
+        url: "images temp/products (2).jpeg",
         alt: "Premium chocolate truffles"
     },
     {
-        url: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
+        url: "images temp/products (3).jpeg",
         alt: "Personalized chocolate packaging"
     },
     {
-        url: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=500&q=80",
+        url: "images temp/products (4).jpeg",
         alt: "Chocolate gift hamper"
     },
     {
-        url: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=500&q=80",
+        url: "images temp/products (5).jpeg",
         alt: "Luxury chocolate collection"
     },
     {
-        url: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80",
+        url: "images temp/products (6).jpeg",
         alt: "Wedding chocolate favours"
     },
     {
-        url: "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=500&q=80",
+        url: "images temp/products (7).jpeg",
         alt: "Festive chocolate gifts"
     },
     {
-        url: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=500&q=80",
+        url: "images temp/products (1).jpeg",
         alt: "Birthday chocolate box"
     }
 ];
